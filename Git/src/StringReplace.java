@@ -8,22 +8,22 @@ public class StringReplace {
 		String search = "UI";
 		String replace = "API";
 		String result;
-		int i;
 		result =org;
+		int i;
 		do
 		{
-			System.out.println("Original string:" +"org");
+			System.out.println("Original string:"+org);
 			i = org.indexOf(search);
 			if (i!=-1)
 			{
 				result = org.substring(0,i);
-				result = result + replace;
-				result = result + org.substring((i+search.length()));
+				result = result+replace;
+				result = result+org.substring((i+search.length()));
+				org=result;
 				
 			}
-			System.out.println(result);
-		}
-		while(i!=-1);
+		}while(i!=-1);
+		System.out.println("replaced string:"+org);
 			
 		}
 
