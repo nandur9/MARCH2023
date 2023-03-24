@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OptionalParamSuite">
+	<test name="OptionalParamTest">
+	<!-- 
+	<parameter name="browser" value="Edge" />
+	-->
+	<parameter name="username" value="nandu" />
+		<classes>
+			<class name="test.OptionalParamTest" />
+		</classes>
+	</test>
+</suite> <!-- OptionalParamSuite -->
